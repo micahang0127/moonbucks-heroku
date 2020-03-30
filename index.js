@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 // const expressSession = require('express-session');
 // const passport = require('passport');               // 에러) Unkown authentication strategy "local"   
 // // require('./passport/index')(passport);           // -> 위 에러 해결방안.
-// const dotenv = require('dotenv');                   // 해야 session secet을 인식해 값을 넣을 수 있다
+const dotenv = require('dotenv');                   // 해야 session secet을 인식해 값을 넣을 수 있다
 // const flash = require('connect-flash');             // 에러 메시지를 redirect 하는 과정에서 쉽게 전달해주는 모듈
 // const user = require('./api/userApi');
 // const sales = require('./api/salesApi');
