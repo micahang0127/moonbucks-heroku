@@ -20,7 +20,6 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// Put all API endpoints under '/api'
 app.get('/api/test', (req, res) => {
   
   res.json({"passwords": "123"});
