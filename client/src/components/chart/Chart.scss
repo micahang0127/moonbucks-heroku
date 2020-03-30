@@ -1,0 +1,12 @@
+@import '../../styles//utils.scss';
+
+.title-chart {
+  color: darkgray;
+  margin: 30px 330px;
+}
+
+@include media('<medium') {
+  .title-chart {
+    margin: 30px;
+  }
+}

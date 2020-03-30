@@ -1,0 +1,62 @@
+@import '../../../styles//utils.scss';
+
+
+.header-template {
+  padding: 10px;
+  background-color: lightgray;
+
+  @include media('>large') {
+    .header-bar {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .header-bar {
+
+    .text {
+      .store-name {
+        color: blue;
+      }
+    }
+   
+    @include media('<medium') {
+      .none {
+        display: none;
+      }
+    }
+    
+     
+    .button {
+       @include button-default();
+        
+        &.side {
+          height: 30px;
+          color: darkred;
+          box-shadow: 0px 5px 0px;
+
+          &:hover {
+            background-color: palevioletred;
+          }
+          &:active {
+            box-shadow: none;
+            padding-bottom: 5px;
+          }
+         }
+        // logout btn
+        &.log {
+          height: 30px;
+          &:hover {
+            background-color: dimgray;
+            border: 3px;
+          }
+        }
+    }
+  }
+
+  .header-login {
+    height: 150px;
+    margin-top: 10px;
+    background: darkseagreen;
+    border-style: ridge;
+  }
+}

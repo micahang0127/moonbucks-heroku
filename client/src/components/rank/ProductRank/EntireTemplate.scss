@@ -1,0 +1,20 @@
+@import '../../../styles//utils.scss';
+
+.title {
+   color: darkgray;
+   margin-top: 30px;
+}
+.category-rank {
+    padding: 15px;
+    margin: 5px 0px;
+    border: dotted 1px;
+    border-color: black;
+
+    h4 {
+      margin : 0px;
+    }
+
+    ol {
+      font-style: italic;
+    }
+}

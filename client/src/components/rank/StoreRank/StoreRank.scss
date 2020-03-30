@@ -1,0 +1,15 @@
+@import '../../../styles//utils.scss';
+
+.store-rank {
+  .title {
+    margin: 30px 0px 0px 10px;
+  }
+
+  ol {
+    margin: 15px 0px;
+
+    li {
+        margin: 10px 0px;
+    }
+  }
+}

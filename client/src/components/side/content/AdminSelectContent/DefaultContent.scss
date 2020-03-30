@@ -1,0 +1,15 @@
+@import '../../../../styles//utils.scss';
+
+.radio-container {
+    padding: 20px 10px;
+    margin: 20px 0px;
+    border-style: outset;
+    border-color: burlywood;
+    
+    label {
+        input {
+          margin: 0px 10px;
+        }
+    }
+}
+

@@ -1,0 +1,107 @@
+@import '../../../styles//utils.scss';
+
+.entire {
+    display: flex;
+
+    .login-template {
+    padding: 0px 20px 0px 20px;
+    width: 500px;
+    
+    .header {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+
+        .button-group {
+        margin: 20px 40px 20px 0px;
+
+        .log {
+            height: 25px;
+            margin: 20px;
+            @include button-default();
+
+            &:hover {
+            background-color: dimgray;
+            border: 3px;
+            }
+        }
+
+        .register {
+            padding: 3px;
+            font-size: 13px;
+            color: white;
+            background-color: black;
+            border-style: double;
+            border-radius: 3px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: dimgray;
+              // border: 3px;
+            }
+            &:active {
+              padding: 0px 3px 3px 0px;
+            }
+        }
+        }
+    }     // end header
+    .err {
+        margin: 0px 0px 10px 0px;
+        color: firebrick;
+    }
+    .content {
+        display: flex;
+
+        .form-group {
+            input {
+                height: 25px;
+                width: 150px;
+                margin: 0px 10px;
+            }
+        }
+    }
+
+    }  // end login-template
+
+    .description {
+      margin: 18px;
+      padding: 10px;
+      width: 500px;
+      height: 110px;
+      border: dotted 1px;
+
+      h5 {
+        margin: 0px;
+      }
+
+      .content {
+          &.first {
+            font-size: 14px;
+            margin-top: 20px;
+            color: navy;
+          }
+        
+          &.second {
+            margin-top: 8px;
+            // div:first-child{
+            //   font-size: 10px;
+            //   color: darkblue;
+            // }
+            div > span {
+              color: firebrick;
+            }
+          }
+      }
+    }
+
+    @include media('<medium') {
+      .register {
+        display: none;
+      }
+
+      .description {
+        display: none;
+      }
+    }
+
+}

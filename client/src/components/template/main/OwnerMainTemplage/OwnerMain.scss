@@ -1,0 +1,8 @@
+@import '../../../../styles/utils.scss';
+
+
+@include media('>large') {
+    .main {
+        margin-left: 80px;
+    }
+}
