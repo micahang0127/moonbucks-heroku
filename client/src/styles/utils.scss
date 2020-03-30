@@ -1,0 +1,18 @@
+@import '~open-color/open-color';
+@import '~include-media/dist/include-media';
+
+$breakpoints: (
+    small : 378px,
+    medium: 768px,
+    large: 1024px,
+    huge: 1200px
+);
+
+
+@mixin button-default() {
+  margin: 0 5px 0 5px;
+  font-weight: bold;
+  border: outset 1px;
+  border-radius: 3px;
+  cursor: pointer;
+}

@@ -12,11 +12,10 @@ console.log(store.getState());  // reducers값 반환
 
 
 ReactDOM.render(
-  <App/>
-    // <Provider store= {store}>
-    //      {/* <BrowserRouter> */}
-    //          <App />
-    //      {/* </BrowserRouter> */}
-    // </Provider>
+    <Provider store= {store}>
+         {/* <BrowserRouter> */}
+             <App />
+         {/* </BrowserRouter> */}
+    </Provider>
 , document.getElementById('root'));
 
