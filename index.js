@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-// const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 // const cors = require('cors');
 // const cookieParser = require('cookie-parser');
 // const expressSession = require('express-session');
@@ -19,6 +19,11 @@ const app = express();
 
 
 app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended : true }));
+dotenv.config();
+
 
 app.get('/api/test', (req, res) => {
   
