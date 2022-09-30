@@ -27,7 +27,7 @@
     "passport-local": "^1.0.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
-    "recharts": "^1.8.5",
+    "recharts": "^2.1.14",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-saga": "^1.1.3"
